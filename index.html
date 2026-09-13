@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">niel.dev</a>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero text-center">
+        <h1>Nathaniel Bonafena</h1>
+        <p>Aspiring Data Scientist &amp; Entrepreneur</p>
+        <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+        </div>
+    </section>
+
+    <section id="about" class="container my-5">
+        <h2>About Me</h2>
+        <p>Hi, I’m Nathaniel. I’m an Information Systems student specializing in Data Science at Universitas Ciputra, where I study under a Diamond Scholarship (JUP). 
+Most of my time is spent developing websites, querying SQL databases, and leveraging modern AI tools to accelerate prototyping and solve practical data problems. I like figuring out how logic, datasets, and smart automation can come together to build tools people actually want to use.
+<br><br>
+When I'm away from the screen, you'll usually find me at <a href="https://linktr.ee/trivmuse" class="highlight-link" target="_blank">the piano</a> practicing, exploring game mechanics, or tinkering with whatever caught my attention that week.</p>
+    </section>
+
+    <section id="skills" class="container my-5">
+        <h2>My Skills</h2>
+        <div class="skills-group">
+            <h4>Languages &amp; Core</h4>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>SQL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>C++</li>
+            </ul>
+        </div>
+        <div class="skills-group">
+            <h4>Tools &amp; Frameworks</h4>
+            <ul class="skills-list">
+                <li>Git</li>
+                <li>Bootstrap</li>
+                <li>Figma</li>
+            </ul>
+        </div>
+        <div class="skills-group">
+            <h4>Concepts</h4>
+            <ul class="skills-list">
+                <li>Relational Databases</li>
+                <li>UI/UX Prototyping</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="container my-5">
+        <h2>My Projects</h2>
+        <div class="project-card">
+            <div class="project-image-container">
+                <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="assets/facebook-home.png" alt="Facebook Home / Feed" class="carousel-img" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/facebook-marketplace.png" alt="Facebook Marketplace" class="carousel-img" />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="assets/facebook-profile.png" alt="Facebook Profile Page" class="carousel-img" />
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="project-info">
+                <div class="project-tags">
+                    <span>UI/UX Design</span>
+                    <span>Figma</span>
+                    <span>Design System</span>
+                    <span>Mobile Interface</span>
+                </div>
+
+                <h3>Facebook Mobile UI/UX Replica</h3>
+
+                <p>
+                    A high-fidelity mobile interface recreation built in Figma covering 8 core application screens, including Login, Feed, Marketplace, Navigation Menu, and Profile tabs. Focus was placed on design consistency, reusable navigation components, and authentic interface hierarchy.
+                </p>
+
+                <div class="project-highlights">
+                    <strong>Key Elements Covered:</strong>
+                    <ul>
+                        <li>Component library for top navigation icons and primary/secondary button states</li>
+                        <li>Dynamic feed card layouts, stories strip, and marketplace grid structures</li>
+                        <li>Multi-tab profile navigation (Posts, Photos, About) and modal flows</li>
+                    </ul>
+                </div>
+
+                <div class="project-actions">
+                    <a href="assets/full-figma-img.png" class="btn btn-secondary" target="_blank">See Full Image</a>
+                </div>
+            </div>
+        </div>
+        <p class="coming-soon text-center">More projects coming soon...</p>
+    </section>
+
+    <section id="achievements" class="container my-5">
+        <h2>Achievements</h2>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="achievement-card">
+                    <div class="achievement-image-container">
+                        <img src="assets/basicsql.png" alt="HackerRank Basic SQL Certificate" class="achievement-img" />
+                    </div>
+                    <div class="achievement-info">
+                        <h3>HackerRank SQL (Basic)</h3>
+                        <p>Completed HackerRank's basic SQL assessment, covering the fundamentals of querying relational databases.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="achievement-card">
+                    <div class="achievement-image-container">
+                        <img src="assets/semifinalraise.jpg" alt="National Accounting Competition Semi-Finalist" class="achievement-img" />
+                    </div>
+                    <div class="achievement-info">
+                        <h3>National Accounting Competition</h3>
+                        <p>Reached the semi-finals of a national-level accounting competition.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="achievement-card">
+                    <div class="achievement-image-container">
+                        <img src="assets/summercamp.jpg" alt="ISB Summer Camp at Universitas Ciputra" class="achievement-img" />
+                    </div>
+                    <div class="achievement-info">
+                        <h3>ISB Summer Camp</h3>
+                        <p>Attended the Information Systems for Business summer camp at Universitas Ciputra.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="coming-soon text-center">More achievements coming soon...</p>
+    </section>
+
+    <section id="contact" class="container my-5">
+        <h2>Contact Me</h2>
+        <p>Email: <a class="contact-link" href="mailto:na.bonafena@gmail.com">na.bonafena@gmail.com</a></p>
+        <div class="contact-links">
+            <a class="contact-link" href="mailto:na.bonafena@gmail.com">
+                <i class="bi bi-envelope"></i> Email
+            </a>
+            <a class="contact-link" href="https://github.com/trivotrex" target="_blank">
+                <i class="bi bi-github"></i> GitHub
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/nathaniel-bonafena-8b5874329/" target="_blank">
+                <i class="bi bi-linkedin"></i> LinkedIn
+            </a>
+        </div>
+    </section>
+
+    <footer class="text-center py-3">
+        <p>&copy; 2026 Nathaniel Bonafena</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
